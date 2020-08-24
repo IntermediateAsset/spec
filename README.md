@@ -59,7 +59,7 @@ Sections are used to group specific types of elements like lights, cameras, node
 - **Type** is 4byte/32bit unsigned integer (uint32_t).
 - **Length** is 8byte/64bit unsigned integer (uint64_t).
 
-Each section will define its content separately.
+Each section will define its own content definition separately.
 
 Section Types:
 
