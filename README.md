@@ -14,7 +14,7 @@ File must start with start MAGIC number: `AE0F`.
 Format:
 
 ```
-| Header | AssetInfo | Sections | EOF |
+| Header | AssetInfo | Sections | Embedded Data | EOF |
 ```
 
 ### 1. Header
@@ -40,4 +40,16 @@ Up Axis must be one of:
 1: Z UP
 2: X UP
 ```
+
+### 3. Sections
+
+Sections are used to group specific types of elements like lights, cameras, nodes, scenes. A section provides section type which identifies itself.
+
+```
+| Type | Section Content |
+```
+
+**Type** is 4byte/32bit unsigned integer (uint32_t).
+
+Each section will define its content separately.
 
