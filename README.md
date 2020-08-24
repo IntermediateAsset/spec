@@ -63,6 +63,7 @@ Each section will define its content separately.
 
 Section Types:
 
+```
 0: Unknown / Invalid
 1: Geometries
 2: Materials
@@ -74,3 +75,4 @@ Section Types:
 8: Lights
 9: Cameras
 ...
+
