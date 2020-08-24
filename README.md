@@ -29,7 +29,6 @@ Format:
 
 ```
 4: uint32_t - Sections Count
-8: uint64_t - Sections Total Length
 ```
 
 ### 3. AssetInfo
