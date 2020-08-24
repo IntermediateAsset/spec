@@ -82,7 +82,15 @@ Section Types:
 
 ## Sections
 
-### Geometries
+### Geometries
+
+Spec allows two kind of geometries
+
+1. Known Geometry Primitives (e.g. Box, Plane ...)
+2. Geometries defined in the file exlicitly
+
+A geometry definition is similar to other file formats.
+
 
 
 
