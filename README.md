@@ -91,6 +91,9 @@ Spec allows two kind of geometries
 
 A geometry definition is similar to other file formats.
 
-
-
+```
+4: uint8_t  - Type
+8: uint64_t - Total Size of Geometry Entry
+N: Geometry Definition
+```
 
