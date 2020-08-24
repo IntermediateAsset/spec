@@ -4,7 +4,7 @@ Asset Change will use (.ae) for default file extension. The name "Asset Change" 
 
 # Binary Format
 
-File must start with start MAGIC number: `AE0F`.
+File must start with start MAGIC number: `AE0F`. Little Endian is used, no option to store as Big Endian to make it strict. 
 
 Format:
 
