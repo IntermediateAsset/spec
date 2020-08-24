@@ -64,15 +64,23 @@ Each section will define its own content definition separately.
 Section Types:
 
 ```
-0: Unknown / Invalid
-1: Geometries
-2: Materials
-3: Effects
-4: Images
-5: Textures
-6: Samplers
-7: Scenes
-8: Lights
-9: Cameras
+0:  Unknown / Invalid
+1:  Geometries
+2:  Materials
+3:  Effects
+4:  Images
+5:  Textures
+6:  Samplers
+7:  Scenes
+8:  Lights
+9:  Cameras
+10: Animations
 ...
+```
+
+## Sections
+
+### Geometries
+
+
 
