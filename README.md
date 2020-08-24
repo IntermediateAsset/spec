@@ -1,0 +1,2 @@
+# spec
+Asset Change Specification
