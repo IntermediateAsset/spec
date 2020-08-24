@@ -56,7 +56,7 @@ Sections are used to group specific types of elements like lights, cameras, node
 ```
 
 ```
-1: uint32_t  - Type
+4: uint32_t  - Type
 8: uint64_t  - Length
 N: Section Content
 ```
