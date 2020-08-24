@@ -48,7 +48,7 @@ Up Axis must be one of:
 2: X UP
 ```
 
-### 3. Sections
+### 4. Sections
 
 Sections are used to group specific types of elements like lights, cameras, nodes, scenes. A section provides section type which identifies itself.
 
