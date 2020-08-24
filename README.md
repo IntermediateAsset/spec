@@ -14,7 +14,7 @@ File must start with start MAGIC number: `AE0F`.
 Format:
 
 ```
-| Header | AssetInfo | Sections | Embedded Data | EOF |
+| Header | AssetInfo | Sections Header | Sections | Embedded Data | EOF |
 ```
 
 ### 1. Header
@@ -25,7 +25,14 @@ Format:
 8: uint64_t - File Length
 ```
 
-### 2. AssetInfo
+### 2. Sections Header
+
+```
+4: uint32_t - Sections Count
+8: uint64_t - Sections Total Length
+```
+
+### 3. AssetInfo
 
 ```
 1: uint8_t  - UP Axis
@@ -46,10 +53,24 @@ Up Axis must be one of:
 Sections are used to group specific types of elements like lights, cameras, nodes, scenes. A section provides section type which identifies itself.
 
 ```
-| Type | Section Content |
+| Type | Length | Section Content |
 ```
 
-**Type** is 4byte/32bit unsigned integer (uint32_t).
+- **Type** is 4byte/32bit unsigned integer (uint32_t).
+- **Length** is 8byte/64bit unsigned integer (uint64_t).
 
 Each section will define its content separately.
 
+Section Types:
+
+0: Unknown / Invalid
+1: Geometries
+2: Materials
+3: Effects
+4: Images
+5: Textures
+6: Samplers
+7: Scenes
+8: Lights
+9: Cameras
+...
