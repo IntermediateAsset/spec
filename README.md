@@ -2,6 +2,10 @@
 
 Asset Exchange will use (.ae) for default file extension. The name "Asset Exchange" may be changed until the spec is completed. The file will be binary not JSON/XML. This will make loading stage faster.
 
+# Shader System
+
+It will use Universal Shader Language (https://github.com/UniversalShading/spec) for shaders.
+
 # Binary Format
 
 File must start with start MAGIC number: `AE0F`.
