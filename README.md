@@ -21,13 +21,15 @@ Asset Exchange will use (.ae) for default file extension. The name "Asset Exchan
 * Audio support
 * Open spec, open source
 
-# Shader System
+# Official Loader
 
-It will use Universal Shader Language (https://github.com/UniversalShading/spec) for shaders.
+[AssetKit](https://github.com/recp/AssetKit) will be the official loader but some alternative simple loader may be provieded if needed.
 
-# Binary Format
+---
 
-File must start with start MAGIC number: `AE0F`.
+# Spec
+
+Files are completely BINARY, and must start with start MAGIC number: `AE0F`.
 
 - Little Endian is used, no option to store as Big Endian to make it strict. 
 - Right Hand Rule is used
