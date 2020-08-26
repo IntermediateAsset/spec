@@ -4,13 +4,13 @@ Asset Exchange will use (.ae) for default file extension. The name "Asset Exchan
 
 # Expected Features
 
+* Completely Binary format
 * No JSON parsing, No XML Parsing, No text Parsing
 * Fast to load, fast to export
 * Strict file, strict spec description 
 * Platform independent
 * Universal Shader Language (https://github.com/UniversalShading/spec) for shading if shadeers will be used
 * Universal Material (https://github.com/UniversalMaterial) for material definitions (maybe)
-* Completely Binary format
 * READONLY binary and WRITE-Enabled binaries
 * Fetatures in common formats will be supported (COLLADA, glTF, Obj, USD, STL, Alembic...)
 * Layering maybe supported
