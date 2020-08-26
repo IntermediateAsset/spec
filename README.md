@@ -2,7 +2,7 @@
 
 Asset Exchange will use (.ae) for default file extension. The name "Asset Exchange" may be changed until the spec is completed. The file will be binary not JSON/XML. This will make loading stage faster.
 
-# Features
+# Expected Features
 
 * No JSON parsing, No XML Parsing, No text Parsing
 * Fast to load, fast to export
