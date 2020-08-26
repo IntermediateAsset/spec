@@ -101,3 +101,58 @@ A geometry definition is similar to other file formats.
 N: Geometry Definition
 ```
 
+```
+4: uint16_t - Primitive Type
+N: Primitive Content
+```
+
+Primitive Types
+
+```
+1: Mesh
+2: Spline
+3: Brep
+```
+
+### Mesh
+
+A mesh consists of instance mesh primitives and it is a container.
+
+```
+4: Instance Primitive Count
+N: Instance Primitives
+```
+
+### Instance Primitives
+
+```
+8: uint64_t - Mesh Primitive Index / Pointer
+```
+
+An reference of Mesh Primitive.
+
+### Mesh Primitive
+
+```
+2:  uint16_t   - Primitive Type
+8:  uint64_t   - Material Index / Pointer
+4:  uint16_t   - Input/Attrib Count
+12: float32[3] - AABB Min
+12: float32[3] - AABB Max
+8:  uint64_t   - Indices Index / Pointer (Accessor)
+N:  Attribs
+```
+
+Primitive Types:
+
+```
+1: Triangles
+2: Triangle Fans
+3: Triangle Strips
+
+4: Lines
+5: Line Strips
+
+6: Polylist
+7: Polygons
+```
