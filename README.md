@@ -92,65 +92,30 @@ Section Types:
 
 ```
 0:  Unknown / Invalid
-1:  Geometries
-2:  Materials
-3:  Effects
-4:  Images
-5:  Textures
-6:  Samplers
-7:  Scenes
-8:  Lights
-9:  Cameras
-10: Animations
+1:  Mesh Primitives
+2:  Geometries
+3:  Materials
+4:  Effects
+5:  Images
+6:  Textures
+7:  Samplers
+8:  Scenes
+9:  Lights
+10: Cameras
+11: Animations
 ...
 ```
 
 ## Sections
 
-### Geometries
-
-Spec allows two kind of geometries
-
-1. Known Geometry Primitives (e.g. Box, Plane ...)
-2. Geometries defined in the file exlicitly
-
-A geometry definition is similar to other file formats.
+### Mesh Primitives
 
 ```
-4: uint8_t  - Type
-8: uint64_t - Total Size of Geometry Entry
-N: Geometry Definition
+4: uint32_t - Section Type == 1
+4: uint8_t  - Count
+8: uint64_t - Total Size of Mesh Primitive Section
+N: Mesh Primitive Definition
 ```
-
-```
-4: uint16_t - Primitive Type
-N: Primitive Content
-```
-
-Primitive Types
-
-```
-1: Mesh
-2: Spline
-3: Brep
-```
-
-### Mesh
-
-A mesh consists of instance mesh primitives and it is a container.
-
-```
-4: Instance Primitive Count
-N: Instance Primitives
-```
-
-### Instance Primitives
-
-```
-8: uint64_t - Mesh Primitive Index / Pointer
-```
-
-An reference of Mesh Primitive.
 
 ### Mesh Primitive
 
@@ -177,3 +142,49 @@ Primitive Types:
 6: Polylist
 7: Polygons
 ```
+
+
+### Geometries
+
+Spec allows two kind of geometries
+
+1. Known Geometry Primitives (e.g. Box, Plane ...)
+2. Geometries defined in the file exlicitly
+
+A geometry definition is similar to other file formats.
+
+```
+4: uint32_t - Section Type == 2
+8: uint64_t - Total Size of Geometry Entry
+N: Geometry Definition
+```
+
+```
+4: uint16_t - Geometry Type
+N: Geometry Content
+```
+
+Geometry Types:
+
+```
+1: Mesh
+2: Spline
+3: Brep
+```
+
+#### Geometry Type: Mesh
+
+A mesh consists of instance mesh primitives and it is a container.
+
+```
+4: Instance Primitive Count
+N: Instance Primitives
+```
+
+### Instance Primitives
+
+```
+8: uint64_t - Mesh Primitive Index / Pointer
+```
+
+An reference of Mesh Primitive.
