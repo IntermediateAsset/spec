@@ -17,7 +17,7 @@ Asset Exchange will use (.ae) for default file extension. The name "Asset Exchan
 * External references (data maybe embedded or stored externally as db), this all also help to provide layering like USD
 * Extensions, exendible
 * Optional Compression
-* Asset + Scene description
+* Asset + Scene description in modern way
 * Audio support
 * Open spec, open source
 
