@@ -131,7 +131,7 @@ N: Mesh Primitive Definition
 2:  uint16_t   - Primitive Type
 1:  uint8_t    - Front face winding order (Default is counter-clockwise (CCW))
 1:  uint8_t    - Cull Mode (Default is Back)
-8:  uint64_t   - Depth State Index / Pointer (DepthState object which keeps writeEnabled, depthFunction...)
+8:  uint64_t   - Depth State Index / Pointer (Default: NULL / 0, DepthState object which keeps writeEnabled, depthFunction...)
 8:  uint64_t   - Material Index / Pointer
 4:  uint16_t   - Input/Attrib Count
 12: float32[3] - AABB Min
