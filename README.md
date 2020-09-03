@@ -141,15 +141,18 @@ N:  Attribs
 Primitive Types:
 
 ```
+0: Points
+
 1: Triangles
 2: Triangle Fans
 3: Triangle Strips
 
 4: Lines
-5: Line Strips
+5: Line Loop
+6: Line Strip
 
-6: Polylist
-7: Polygons
+7: Polylist
+8: Polygons
 ```
 
 
