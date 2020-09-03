@@ -60,6 +60,7 @@ Format:
 
 ```
 1: uint8_t  - UP Axis
+1: uint8_t  - Front face winding order (Default is counter-clockwise (CCW))
 8: time_t   - created at (unix timestamp)
 8: time_t   - modified at (unix timestamp)
 ```
@@ -70,6 +71,13 @@ Up Axis must be one of:
 0: Y UP
 1: Z UP
 2: X UP
+```
+
+Winding order must be one of:
+
+```
+0: Counter-clockwise (CCW)
+1: Clockwise (CW)
 ```
 
 ### 4. Sections
@@ -121,6 +129,7 @@ N: Mesh Primitive Definition
 
 ```
 2:  uint16_t   - Primitive Type
+1:  uint8_t    - Front face winding order (Default is counter-clockwise (CCW))
 8:  uint64_t   - Material Index / Pointer
 4:  uint16_t   - Input/Attrib Count
 12: float32[3] - AABB Min
