@@ -48,3 +48,5 @@ Cull mode:
 2: Cull Front
 3: Cull Is Disabled
 ```
+
+A material can override depth state, cull mode and similar properties...
