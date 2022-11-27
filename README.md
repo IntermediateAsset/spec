@@ -37,7 +37,7 @@ Asset Exchange will use (.ae) or Intermediate Asset (.ia) for default file exten
 
 # Spec
 
-Files are completely BINARY, and must start with start MAGIC number: `AE0F`.
+Files are completely BINARY, and must start with start MAGIC number: `IAEF`.
 
 - Little Endian is used, no option to store as Big Endian to make it strict. 
 - Right Hand Rule is used
@@ -53,7 +53,7 @@ Format:
 ### 1. Header
 
 ```
-4: uint32_t - Magic (AE0F)
+4: uint32_t - Magic (IAEF)
 4: uint32_t - Version
 8: uint64_t - File Length
 ```
